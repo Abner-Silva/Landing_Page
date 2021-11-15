@@ -89,22 +89,40 @@ li{
     margin-top: 0%;
     padding: 0px;
     margin-left: 35%;
-    
-    text-align: center;
-    
-    
-    
+    text-align: center; 
     
 }
 #navLast{
    
     display: inline-block;
     margin-top: 0%;
-    margin-left: 18%;
+    margin-left: 10%;
     padding: 0px;
     text-align: center;
     
     
+}
+
+#barPList{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50px;
+    height: 40px;
+}
+
+#barPList div{
+    margin-bottom: 5px;
+    
+}
+
+.barList{
+    
+    width: 30px;
+    height: 5px;
+    background-color: white;
 }
 
 .search{
@@ -120,6 +138,7 @@ li{
     border:solid black 2px;
     background: black;
 }
+
 
 #principal{
     margin-top: 20%;
@@ -203,3 +222,91 @@ img{
 
 
 
+
+@media screen and (max-width:421px) {
+    li{
+        font-size: 0.7em;
+    }
+
+    h1{
+        font-size: 1.5em;
+        
+    }
+
+    h2{
+        font-size: 1.2em;
+        
+    }
+
+    p{
+        font-size: 0.8em;
+    }
+
+    #navigation{
+        display: flex;
+        flex-direction: row;
+        top: 2px;
+        margin-right: 10px;
+    }
+
+    #imageOne{
+        top: 100%;
+        left: -15%;
+        transform: scale(0.7);
+    }
+
+    #navStart{
+        display: none;
+    }
+
+
+    #navMid{
+        position: absolute;
+        left: 120%;
+        top: 30%;
+        display: flex;
+        flex-direction: column;
+
+        background-color: black;
+        margin-left: 10px;
+    }
+
+    #navMid-active{
+        display: flex;
+        position: absolute;
+        left: 78%;
+        top: 30%;
+        text-align: center;
+        
+        width: 100px;
+      
+        
+        flex-direction: column;
+       
+
+        background-color: black;
+        padding-left: 0px;
+        
+    }
+
+    #barPList{
+        display: flex;
+        position: absolute;
+        right: 1%;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .register{
+       margin-right: 5em;
+        background-color: orange;
+    }
+
+    #leftStyleBack{
+        top: 100%;
+        left: -80%;
+    }
+  
+}
